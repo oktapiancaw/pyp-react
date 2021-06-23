@@ -1,10 +1,13 @@
 import React from "react";
 import "../styles/Home.css";
+import Navbar from "../components/navbar/Navbar";
 
-export default function Home() {
+const Home = () => {
   return (
     <div>
-      <p className="text-lg text-blue-700"> Hello</p>
+      <Navbar />
     </div>
   );
-}
+};
+
+export default Home;
