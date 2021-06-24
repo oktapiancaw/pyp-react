@@ -7,7 +7,7 @@ const Navbar = (props) => {
       return (
         <nav className="navbar py-7 p-5 bg-white rounded flex items-center justify-between">
           <a href="./">
-            <img src="./BackIcon.svg" />
+            <img src="./icon/BackIcon.svg" />
           </a>
           <div className="w-10 h-10 bg-gray-600 rounded mr-2"></div>
         </nav>
@@ -24,7 +24,7 @@ const Navbar = (props) => {
         </div>
       </div>
       <a href="#">
-        <img src="./DashIcon.svg" className="w-10 h-10" />
+        <img src="./icon/DashIcon.svg" className="w-10 h-10" />
       </a>
       <div className="navbarMenu">
         <ul>
