@@ -1,0 +1,20 @@
+.navbar {
+  position: relative;
+  margin: 5px;
+  width: calc(100% - 10px);
+  height: 60px;
+}
+.navbar a img{
+  width: 28px;
+}
+.navbar .navbarMenu{
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top: 50px;
+  right: 10px;
+  width: 200px;
+  padding: 6px 8px;
+  background-color: #FFF;
+  border-radius: 5px;
+}
