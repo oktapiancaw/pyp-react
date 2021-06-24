@@ -1,8 +1,38 @@
 import Navbar from "../components/navbar/Navbar";
 import MobileNav from "../components/mobileNav/MobileNav";
-import Tasks from "../components/task/Tasks";
+import TaskList from "../components/task/TaskList";
 
 const Goals = () => {
+  const goals = [
+    {
+      id: 1,
+      goal_id: 1,
+      nominal: 25000,
+      date: "Sat, 02 Jan 2021",
+      status: 1,
+    },
+    {
+      id: 2,
+      goal_id: 1,
+      nominal: 25000,
+      date: "Sun, 03 Jan 2021",
+      status: 1,
+    },
+    {
+      id: 3,
+      goal_id: 1,
+      nominal: 25000,
+      date: "Mon, 04 Jan 2021",
+      status: 1,
+    },
+    {
+      id: 4,
+      goal_id: 1,
+      nominal: 25000,
+      date: "Tue, 05 Jan 2021",
+      status: 1,
+    },
+  ];
   return (
     <div className="main">
       <Navbar setting="false" />
@@ -19,7 +49,10 @@ const Goals = () => {
             <div className="h-24 w-36 mr-2 bg-gray-700 rounded"></div>
           </div>
         </div> */}
-        <Tasks />
+        <div>
+          <h2 className="text-base font-medium col-span-2">Daily tasks</h2>
+          <TaskList data={goals} check="true" />
+        </div>
       </div>
       <MobileNav />
     </div>
