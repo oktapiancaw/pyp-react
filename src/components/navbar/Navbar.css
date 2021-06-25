@@ -8,13 +8,8 @@
   width: 28px;
 }
 .navbar .navbarMenu{
-  display: none;
   position: absolute;
   z-index: 100;
-  top: 50px;
+  top: 70px;
   right: 10px;
-  width: 200px;
-  padding: 6px 8px;
-  background-color: #FFF;
-  border-radius: 5px;
 }

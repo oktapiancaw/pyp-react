@@ -1,7 +1,14 @@
 /* eslint-disable react/prop-types */
+import { useState } from "react";
 import "./Navbar.css";
 
 const Navbar = (props) => {
+  const [isActive, setActive] = useState("true");
+
+  const activeHandler = () => {
+    setActive(!isActive);
+  };
+
   if (props) {
     if (props.setting == "false") {
       return (
@@ -21,19 +28,35 @@ const Navbar = (props) => {
           <span className="font-thin text-xs">oktapian1998@gmail.com</span>
         </div>
       </div>
-      <a href="#">
-        <img src="./icon/DashIcon.svg" className="w-10 h-10" />
-      </a>
-      <div className="navbarMenu">
+      <button onClick={activeHandler}>
+        <img src="./icon/DashIcon.svg" className="w-7 h-7" />
+      </button>
+      <div
+        className={
+          isActive ? "hidden" : "navbarMenu py-3 px-5 rounded bg-white shadow"
+        }
+      >
         <ul>
           <li>
-            <a>lorem ipsum</a>
+            <a className="text-sm mb-2" href="./">
+              Profile
+            </a>
           </li>
           <li>
-            <a>lorem ipsum</a>
+            <a className="text-sm mb-2" href="./">
+              About
+            </a>
           </li>
           <li>
-            <a>lorem ipsum</a>
+            <a className="text-sm mb-2" href="./contact">
+              Contact
+            </a>
+          </li>
+          <hr />
+          <li>
+            <a className="text-sm mb-2" href="./contact">
+              Log out
+            </a>
           </li>
         </ul>
       </div>
