@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 const TaskList = (props) => {
-  console.log(props);
   let option;
   if (props.check == "true") {
     option = (
