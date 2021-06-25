@@ -1,3 +1,12 @@
 .banner {
   position: relative;
 }
+.banner img{
+  filter: brightness(50%);
+}
+.banner div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
