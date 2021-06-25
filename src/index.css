@@ -19,3 +19,7 @@
   height: 320px;
   background-color: #bababa;
 }
+.sectionBox{
+  min-height: 60vh;
+  padding-bottom: 120px;
+}

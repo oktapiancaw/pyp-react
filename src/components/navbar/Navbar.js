@@ -5,7 +5,7 @@ const Navbar = (props) => {
   if (props) {
     if (props.setting == "false") {
       return (
-        <nav className="navbar p-5 rounded flex items-center justify-between">
+        <nav className="navbar py-5 px-6 rounded flex items-center justify-between">
           <h1 className="font-semibold">{props.headText ?? "Mafigo"}</h1>
           <div className="w-10 h-10 bg-gray-600 rounded"></div>
         </nav>
@@ -13,7 +13,7 @@ const Navbar = (props) => {
     }
   }
   return (
-    <nav className="navbar py-7 p-5 shadow rounded flex items-center justify-between">
+    <nav className="navbar py-5 px-6 shadow bg-white flex items-center justify-between">
       <div className="flex items-center">
         <div className="w-10 h-10 bg-gray-600 rounded mr-2"></div>
         <div>

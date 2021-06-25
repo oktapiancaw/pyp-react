@@ -1,4 +1,3 @@
-import "../styles/Transaction.css";
 import Navbar from "../components/navbar/Navbar";
 import MobileNav from "../components/mobileNav/MobileNav";
 import TaskList from "../components/task/TaskList";
@@ -48,7 +47,7 @@ const Transaction = () => {
           <span className="font-medium tracking-wider">2.000.000</span>
         </div>
       </div>
-      <div className="transBox p-6 mt-12 bg-white rounded-lg">
+      <div className="sectionBox p-6 mt-12 bg-white rounded-lg">
         <div className="my-3">
           <h2 className="text-sm font-medium mb-1 ml-1">Income</h2>
           <TaskList data={trans[0]} />

@@ -35,11 +35,25 @@ const Goals = () => {
   ];
   return (
     <div className="main">
-      <Navbar setting="false" />
+      <Navbar setting="false" headText="Your Goal" />
       <div className="my-3 mx-6">
         <div className="grid grid-cols-2 gap-2 my-3">
-          <h1 className="text-base font-medium col-span-2">Your Goals</h1>
-          <div className="col-span-2 w-100 h-32 rounded bg-gray-800"></div>
+          <div className="col-span-2 w-100 rounded p-5 bg-white">
+            <p className="text-xs font-light text-gray-600">Make some money</p>
+            <span className="font-medium text-base tracking-wider">
+              Rp. 5.000.000,00
+            </span>
+            <hr className="my-2" />
+            <p className="text-xs font-light text-gray-600">Now</p>
+            <div className="flex justify-between items-center">
+              <span className="font-medium text-sm tracking-wider">
+                Rp. 2.000.000
+              </span>
+              <p className="text-xs font-light text-gray-400 mt-1 tracking-wider">
+                21 Dec 2021
+              </p>
+            </div>
+          </div>
         </div>
         {/* <h2 className="text-base font-medium col-span-2">Other Goals</h2>
         <div className="flex overflow-x-scroll my-3">
@@ -49,10 +63,12 @@ const Goals = () => {
             <div className="h-24 w-36 mr-2 bg-gray-700 rounded"></div>
           </div>
         </div> */}
-        <div>
-          <h2 className="text-base font-medium col-span-2">Daily tasks</h2>
-          <TaskList data={goals} check="true" />
-        </div>
+      </div>
+      <div className="sectionBox p-6 mt-4 bg-white rounded-lg">
+        <h2 className="text-sm font-medium mb-1 ml-1 col-span-2">
+          Daily tasks
+        </h2>
+        <TaskList data={goals} check="true" />
       </div>
       <MobileNav />
     </div>

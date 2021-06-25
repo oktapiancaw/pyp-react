@@ -1,4 +1,3 @@
-import "../styles/Debt.css";
 import Navbar from "../components/navbar/Navbar";
 import MobileNav from "../components/mobileNav/MobileNav";
 import TaskList from "../components/task/TaskList";
@@ -28,7 +27,7 @@ const Debt = () => {
   return (
     <div className="main">
       <Navbar setting="false" headText="Debt List" />
-      <div className="debtBox p-6 mt-12 bg-white rounded-lg">
+      <div className="sectionBox p-6 mt-12 bg-white rounded-lg">
         <TaskList data={debts} />
       </div>
       <div className="fixed w-full bottom-16 px-6">
