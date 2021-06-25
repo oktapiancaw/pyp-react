@@ -27,9 +27,9 @@ const TaskList = (props) => {
         return (
           <div
             key={task.id}
-            className="w-100 h-8 py-3 px-4 mb-2 flex text-gray-800 justify-between items-center rounded shadow-sm"
+            className="w-100 h-8 py-5 px-3 mb-3 flex text-gray-800 justify-between items-center rounded shadow"
           >
-            <p className="text-sm">
+            <p className="text-xs">
               <span className="font-medium">{task.name ?? "senin"}, </span>
               {task.date ?? "test"}
             </p>

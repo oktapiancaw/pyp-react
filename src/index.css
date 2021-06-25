@@ -5,3 +5,17 @@
 *{
   font-family: 'Poppins', sans-serif;;
 }
+
+.main {
+  position: relative;
+}
+.main::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 320px;
+  background-color: #bababa;
+}

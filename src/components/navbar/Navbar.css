@@ -1,8 +1,8 @@
 .navbar {
   position: relative;
-  margin: 5px;
-  width: calc(100% - 10px);
-  height: 60px;
+  /* margin: 5px; */
+  /* width: calc(100% - 10px); */
+  width: 100%;
 }
 .navbar a img{
   width: 28px;

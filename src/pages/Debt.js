@@ -1,3 +1,4 @@
+import "../styles/Debt.css";
 import Navbar from "../components/navbar/Navbar";
 import MobileNav from "../components/mobileNav/MobileNav";
 import TaskList from "../components/task/TaskList";
@@ -25,11 +26,18 @@ const Debt = () => {
   ];
 
   return (
-    <div>
-      <Navbar setting="false" />
-      <div className="my-3 mx-6">
-        <h1 className="font-medium text-base mb-10">Debt List</h1>
+    <div className="main">
+      <Navbar setting="false" headText="Debt List" />
+      <div className="debtBox p-6 mt-12 bg-white rounded-lg">
         <TaskList data={debts} />
+      </div>
+      <div className="fixed w-full bottom-16 px-6">
+        <div className="w-full grid grid-cols-2 gap-2">
+          <button className="col-span-2 w-full h-10 bg-gray-600 rounded">
+            <img />
+            <span className="text-white tracking-wide">Add Debt</span>
+          </button>
+        </div>
       </div>
       <MobileNav />
     </div>
